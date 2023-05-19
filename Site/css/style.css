@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff ;
+    height: 70px;
+    padding-left: 40px;
+    width: 100%;
+    position: fixed;
+    top:0;
+
+}
+
+.logo {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color: #333;
+    
+}
+ 
+
+.logo:hover {
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Oswald', Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.1875em;
+	letter-spacing: 0.05em;
+	color: #3d3d3d;
+	background-color: white;
+}
+    
+nav {
+    display: flex;
+    
+}
+
+nav ul li { 
+    display:inline; 
+}
+
+nav ul li a {
+    /* topo, direita, base, esquerda */ 
+    padding: 0px 40px 0px 40px;
+    /* color é a cor da fonte */
+    color: #f29c63;
+    font-family: 'Oswald', 'montserratlight';
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.32em;
+    font-size: 0.8em;
+  }
+
+section {
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 80px;
+    
+}
+
+p {
+    margin-left: 20px;
+    margin-right: 20px;
+       
+}
+
+.renders {
+    padding: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.desenho {
+    padding-left: 20%;
+    padding-right: 20%;
+    width: 100%;
+         
+}
+
+
+.subtitulo {
+    font-family: 'Oswald', 'montserratlight';
+    color: #f29c63;
+    text-transform: uppercase;
+    letter-spacing: 0.32em;
+    margin-left: 20px;
+}
+
+#portfolio-section .subtitulo {
+    font-family: 'Oswald', 'montserratlight';
+    color: #f29c63;
+    letter-spacing: 0.32em;
+}  
+
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vw;
+}
+.gallery-items{
+    width: 340px;
+    height: 340px;
+    flex-grow: 1;
+    transition: transform .5s linear;
+}
+.gallery-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-items:hover{
+    transform: scale(1.1);
+}
+
+footer {
+    clear: both;
+    font-weight: normal;
+    background-color: #ffffff;
+    height: 80px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media screen and (max-width: 990px) {
+    header {
+      height: auto;
+      padding: 10px;
+      position: relative;
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin-top: 10px;
+      display: inline-block;
+    }
+  
+    nav ul li a {
+      padding: 0;
+      margin: 0px 20px 0px 20px;
+    }
+  
+    section {
+      padding-top: 20px;
+    }
+  }
